@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3 Columns with Flexbox</title>
+        
+        <style>
+            /* Flex container to hold the columns */
+            .flex-container {
+                display: flex;          /* Use flexbox for layout */
+                justify-content: space-between; /* Distribute space evenly between columns */
+            }
+
+            /* Each flex item (column) */
+            .column {
+                background-color: lightgray;
+                padding: 20px;
+                width: 30%;             /* Set each column to 30% width for 3 columns */
+                text-align: center;
+                margin: 10px;           /* Optional margin between columns */
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="flex-container">
+            <div class="column"><h2>Column 1</h2><p>Content 1</p></div>
+            <div class="column"><h2>Column 2</h2><p>Content 2</p></div>
+            <div class="column"><h2>Column 3</h2><p>Content 3</p></div>
+        </div>
+    </body>
+</html>
